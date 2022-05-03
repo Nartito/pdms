@@ -18,15 +18,15 @@ export const SidebarData = [
         cName: 'nav-text'
     },
     {
-        title: 'Announcements',
+        title: 'PublicAnnouncements',
         path: '/publicannouncements',
         icon: <AiIcons.AiFillAlert />,
         cName: 'nav-text'
     },
     {
-        title: 'Report A Crime',
+        title: 'ReportACrime',
         path: '/reportacrime',
         icon: <AiIcons.AiFillEye />,
         cName: 'nav-text'
-    },
+    }
 ]

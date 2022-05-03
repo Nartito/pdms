@@ -5,11 +5,10 @@
   padding: 0;
 }
 
-.home {
+.home, .publicannouncements, .staff, .reportacrime {
   display: flex;
   height: 90vh;
   align-items: center;
   justify-content: center;
-  background-color: aqua;
-  font-size: 200%;
+  font-size: 3rem;
 }

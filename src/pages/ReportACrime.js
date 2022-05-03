@@ -1,13 +1,11 @@
-import React, {Component} from 'react';
+import React from 'react'
 
-export class ReportACrime extends Component{
-  render() {
-      return (  
-    <div className="reportacrime">
+function ReportACrime() {
+  return (
+    <div className='reportacrime'>
         <h1>Report A Crime</h1>
     </div>
-    )
-  }
+  )
 }
 
 export default ReportACrime
