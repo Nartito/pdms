@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react';
 
-function Staff() {
-  return (
-    <div className='staff'>
-        <h1>Staff</h1>
-    </div>
-  )
+export class Staff extends Component{
+    render(){
+        return(
+            <div className='staff'>
+                <h1>Staff</h1>
+            </div>
+        )
+    }
 }
-
-export default Staff

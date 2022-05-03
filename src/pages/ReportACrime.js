@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react';
 
-function ReportACrime() {
-  return (
-    <div className='reportacrime'>
-        <h1>Report A Crime</h1>
-    </div>
-  )
+export class ReportACrime extends Component{
+    render(){
+        return(
+            <div className='reportacrime'>
+                <h1>Report A Crime</h1>
+            </div>
+        )
+    }
 }
-
-export default ReportACrime

@@ -24,7 +24,7 @@ export const SidebarData = [
         cName: 'nav-text'
     },
     {
-        title: 'ReportACrime',
+        title: 'Report A Crime',
         path: '/reportacrime',
         icon: <AiIcons.AiFillEye />,
         cName: 'nav-text'
