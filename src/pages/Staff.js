@@ -14,7 +14,7 @@ export class Staff extends Component{
         .then(data => {this.setState({deps:data})})
     }
 
-    componentWillMount(){
+    componentDidMount(){
         this.refreshList();
     }
 
@@ -27,18 +27,20 @@ export class Staff extends Component{
         const {deps} = this.state;
         return(
             <div className='staff'>
-                <Table className='mt-4' striped bordered hover size='sm' >
+                <Table className='mt-4' striped bordered hover size='sm'>
                     <thead>
-                        <tr>ID</tr>
-                        <tr>Name</tr>
-                        <tr>Surname</tr>
-                        <tr>Rank</tr>
-                        <tr>Birthdate</tr>
-                        <tr>DoJ</tr>
-                        <tr>OPTIONS</tr>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Surname</th>
+                            <th>Rank</th>
+                            <th>Birthday</th>
+                            <th>DateOfJoining</th>
+                            <th>OPTIONS</th>
+                        </tr>
                     </thead>
                     <tbody>
-                        {deps.map(dep => <tr key={dep.ID}>
+                        {deps.map(dep => <tr key={dep.Id}>
                             <td>{dep.Id}</td>
                             <td>{dep.Name}</td>
                             <td>{dep.Surname}</td>
