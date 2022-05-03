@@ -18,7 +18,7 @@ export const SidebarData = [
         cName: 'nav-text'
     },
     {
-        title: 'PublicAnnouncements',
+        title: 'Public Announcements',
         path: '/publicannouncements',
         icon: <AiIcons.AiFillAlert />,
         cName: 'nav-text'
