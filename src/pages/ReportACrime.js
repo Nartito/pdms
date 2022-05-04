@@ -10,7 +10,7 @@ export class ReportACrime extends Component{
     refreshList(){
         fetch(process.env.REACT_APP_API+'reportacrime')
         .then(response => response.json())
-        .then(data => {this.setState({deps:data})})
+        .then(data => {this.setstate({deps:data})})
         console.log(this.state);
     }
 
