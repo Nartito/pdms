@@ -12,6 +12,7 @@ export class Staff extends Component{
         fetch(process.env.REACT_APP_API+'staff')
         .then(response => response.json())
         .then(data => {this.setState({deps:data})})
+        console.log(this.state);
     }
 
     componentDidMount(){
@@ -36,18 +37,16 @@ export class Staff extends Component{
                             <th>Rank</th>
                             <th>Birthday</th>
                             <th>DateOfJoining</th>
-                            <th>OPTIONS</th>
                         </tr>
                     </thead>
                     <tbody>
                         {deps.map(dep => <tr key={dep.Id}>
-                            <td>{dep.Id}</td>
-                            <td>{dep.Name}</td>
-                            <td>{dep.Surname}</td>
-                            <td>{dep.Rank}</td>
-                            <td>{dep.Birthday}</td>
-                            <td>{dep.DateOfJoining}</td>
-                            <td>EDIT / DELETE</td>
+                            <td>{dep.id}</td>
+                            <td>{dep.name}</td>
+                            <td>{dep.surname}</td>
+                            <td>{dep.rank}</td>
+                            <td>{dep.birthday}</td>
+                            <td>{dep.dateOfJoining}</td>
                         </tr>)}
                     </tbody>
                 </Table>
