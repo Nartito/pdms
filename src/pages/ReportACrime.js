@@ -48,6 +48,7 @@ export class ReportACrime extends Component{
                             <td>{dep.when}</td>
                             <td>{dep.location}</td>
                             <td>{dep.description}</td>
+                            <td>{dep.address}</td>
                         </tr>)}
                     </tbody>
                 </Table>
