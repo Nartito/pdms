@@ -28,6 +28,7 @@ export class Staff extends Component{
         const {deps} = this.state;
         return(
             <div className='staff'>
+                <h1>Active Personnel</h1>
                 <Table className='mt-4' striped bordered hover size='sm'>
                     <thead>
                         <tr>
@@ -35,8 +36,8 @@ export class Staff extends Component{
                             <th>Name</th>
                             <th>Surname</th>
                             <th>Rank</th>
-                            <th>Birthday</th>
-                            <th>DateOfJoining</th>
+                            <th>Birthdate</th>
+                            <th>Date Of Joining</th>
                         </tr>
                     </thead>
                     <tbody>

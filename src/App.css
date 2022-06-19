@@ -3,3 +3,17 @@
   margin: 0;
   padding: 0;
 }
+
+.staff, .caraccident, .convictedfelon, .courtduty, .evidenceroom, .home, .impound,
+.investigation, .nonemergency, .openassignment, .parkingticket, .prisonduty, .publicannouncements,
+.reportacrime, .staffduty, .warrant {
+  width: 50vw;
+  position: absolute;
+  left: 25vw;
+
+}
+
+h1{
+  text-align: center;
+  margin-top: 20px;
+}

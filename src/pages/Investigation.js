@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import { Table } from 'react-bootstrap';
 
-export class PublicAnnouncements extends Component{
+export class Investigation extends Component{
+
     constructor(props){
         super(props);
         this.state={deps:[]}
     }
 
     refreshList(){
-        fetch(process.env.REACT_APP_API+'publicannouncement')
+        fetch(process.env.REACT_APP_API+'investigation')
         .then(response => response.json())
         .then(data => {this.setState({deps:data})})
         console.log(this.state);
@@ -26,23 +27,25 @@ export class PublicAnnouncements extends Component{
     render(){
         const {deps} = this.state;
         return(
-            <div className='publicannouncements'>
-                <h1>Public Announcements</h1>
+            <div className='investigation'>
+                <h1>Ongoing Investigations</h1>
                 <Table className='mt-4' striped bordered hover size='sm'>
                     <thead>
                         <tr>
                             <th>Id</th>
-                            <th>Title</th>
-                            <th>Length</th>
-                            <th>Text</th>
+                            <th>Name of Suspect</th>
+                            <th>Time of Crime</th>
+                            <th>Type of Crime</th>
+                            <th>Description</th>
                         </tr>
                     </thead>
                     <tbody>
                         {deps.map(dep => <tr key={dep.Id}>
                             <td>{dep.id}</td>
+                            <td>{dep.person}</td>
+                            <td>{dep.time}</td>
                             <td>{dep.title}</td>
-                            <td>{dep.length}</td>
-                            <td>{dep.text}</td>
+                            <td>{dep.description}</td>
                         </tr>)}
                     </tbody>
                 </Table>

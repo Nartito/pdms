@@ -27,14 +27,14 @@ export class ReportACrime extends Component{
         const {deps} = this.state;
         return(
             <div className='reportacrime'>
+                <h1>Report A Crime</h1>
                 <Table className='mt-4' striped bordered hover size='sm'>
                     <thead>
                         <tr>
                             <th>Id</th>
                             <th>Name</th>
-                            <th>Surname</th>
                             <th>Type of Crime</th>
-                            <th>Time</th>
+                            <th>Time of Report</th>
                             <th>Location</th>
                             <th>Description</th>
                         </tr>
@@ -43,9 +43,8 @@ export class ReportACrime extends Component{
                         {deps.map(dep => <tr key={dep.Id}>
                             <td>{dep.id}</td>
                             <td>{dep.name}</td>
-                            <td>{dep.surname}</td>
                             <td>{dep.crime}</td>
-                            <td>{dep.when}</td>
+                            <td>{dep.timeOfReport}</td>
                             <td>{dep.location}</td>
                             <td>{dep.description}</td>
                         </tr>)}
